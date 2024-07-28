@@ -1,27 +1,30 @@
-const themeToggle = document.getElementById('themeToggle');
-const darkThemeLink = document.createElement('link');
-darkThemeLink.rel = 'stylesheet';
-darkThemeLink.href = 'path/to/dark.css';
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.getElementById("themeToggle");
+  const themeLink = document.createElement("link");
+  themeLink.rel = "stylesheet";
+  themeLink.href = "./assets/css/light.css"; // Start with light theme (same as styles.css)
 
-let isDarkTheme = localStorage.getItem('darkTheme') === 'true';
+  let isDarkTheme = localStorage.getItem("darkTheme") === "true";
 
-function setTheme(dark) {
+  function setTheme(dark) {
     if (dark) {
-        document.head.appendChild(darkThemeLink);
-        themeToggle.textContent = 'Switch to Light Theme';
+      themeLink.href = "./assets/css/dark.css";
+      themeToggle.textContent = "brightness_7"; // Sun icon
     } else {
-        if (document.head.contains(darkThemeLink)) {
-            document.head.removeChild(darkThemeLink);
-        }
-        themeToggle.textContent = 'Switch to Dark Theme';
+      themeLink.href = "./assets/css/light.css";
+      themeToggle.textContent = "brightness_6"; // Moon icon
     }
-    localStorage.setItem('darkTheme', dark);
+    localStorage.setItem("darkTheme", dark);
     isDarkTheme = dark;
-}
+  }
 
-// Set initial theme
-setTheme(isDarkTheme);
+  // Add the theme link to the head
+  document.head.appendChild(themeLink);
 
-themeToggle.addEventListener('click', () => {
+  // Set initial theme
+  setTheme(isDarkTheme);
+
+  themeToggle.addEventListener("click", () => {
     setTheme(!isDarkTheme);
+  });
 });

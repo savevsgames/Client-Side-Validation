@@ -1,6 +1,6 @@
 body {
-  background-color: var(--dark-bg);
-  color: var(--dark-text);
+  background-color: var(--light-bg);
+  color: var(--light-text);
 }
 
 /* Typography */
@@ -10,60 +10,60 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--dark-text);
+  color: var(--light-text);
 }
 
 /* Code elements */
 code,
 pre {
-  background-color: var(--dark-highlight);
-  color: var(--dark-bg);
+  background-color: var(--light-highlight);
+  color: var(--light-text);
 }
 
 /* Links */
 a {
-  color: var(--dark-accent);
+  color: var(--light-accent);
 }
 
 a:hover,
 a:focus {
-  color: var(--dark-highlight);
+  color: var(--light-highlight);
 }
 
 /* Buttons */
 button,
 .button {
-  background-color: var(--dark-accent);
-  color: var(--dark-bg);
+  background-color: var(--light-accent);
+  color: var(--light-bg);
 }
 
 button:hover,
 .button:hover {
-  background-color: var(--dark-highlight);
-  color: var(--dark-bg);
+  background-color: var(--light-highlight);
+  color: var(--light-text);
 }
 
 /* Navigation */
 nav {
-  background-color: var(--dark-highlight);
+  background-color: var(--light-highlight);
 }
 
 nav a {
-  color: var(--dark-bg);
+  color: var(--light-text);
 }
 
 nav a:hover,
 nav a:focus {
-  color: var(--dark-accent);
+  color: var(--light-accent);
 }
 
 /* Forms */
 input,
 textarea,
 select {
-  border-color: var(--dark-text);
-  background-color: var(--dark-bg);
-  color: var(--dark-text);
+  border-color: var(--light-text);
+  background-color: var(--light-bg);
+  color: var(--light-text);
 }
 
 input:focus,
@@ -75,20 +75,20 @@ select:focus {
 
 /* Form validation and alert styles */
 .alert-success {
-  background-color: var(--success);
-  color: var(--dark-bg);
+  background-color: var(--success-bg);
+  color: var(--success);
   border-color: var(--success);
 }
 
 .alert-error {
-  background-color: var(--error);
-  color: var(--dark-bg);
+  background-color: var(--error-bg);
+  color: var(--error);
   border-color: var(--error);
 }
 
 .alert-warning {
-  background-color: var(--warning);
-  color: var(--dark-bg);
+  background-color: var(--warning-bg);
+  color: var(--warning);
   border-color: var(--warning);
 }
 
@@ -123,6 +123,6 @@ select:focus {
 
 /* Utility classes */
 .highlight {
-  background-color: var(--dark-highlight);
-  color: var(--dark-bg);
+  background-color: var(--light-highlight);
+  color: var(--light-text);
 }
