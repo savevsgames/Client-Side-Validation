@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Client side form validation using JavaScript"
+    />
+    <title>Greg's Client Side Form Validation</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Libre+Baskerville&family=Nanum+Gothic+Coding:wght@400;700&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./assets/js/scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li>
+            <button id="themeToggle" class="material-icons">
+              brightness_6
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <form id="signUpForm">
+        <h2>Sign Up to Save Your Info!</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+        />
+
+        <label for="newsletter">
+          <input type="checkbox" id="newsletter" name="newsletter" />
+          Sign up for newsletter?
+        </label>
+
+        <fieldset>
+          <legend>Check your interests</legend>
+          <label
+            ><input type="checkbox" name="interests" value="coding" />
+            Coding</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="design" />
+            Design</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="marketing" />
+            Marketing</label
+          >
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <script src="themeToggle.js"></script>
+  </body>
+</html>

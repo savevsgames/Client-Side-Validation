@@ -1,0 +1,116 @@
+/* dark.css */
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-text);
+  }
+  
+  /* Code elements */
+  code, pre {
+    background-color: var(--dark-highlight);
+    color: var(--dark-bg);
+  }
+  
+  /* Links */
+  a {
+    color: var(--dark-accent);
+  }
+  
+  a:hover, a:focus {
+    color: var(--dark-highlight);
+  }
+  
+  /* Buttons */
+  button, .button {
+    background-color: var(--dark-accent);
+    color: var(--dark-bg);
+  }
+  
+  button:hover, .button:hover {
+    background-color: var(--dark-highlight);
+    color: var(--dark-bg);
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: var(--dark-highlight);
+  }
+  
+  nav a {
+    color: var(--dark-bg);
+  }
+  
+  nav a:hover, nav a:focus {
+    color: var(--dark-accent);
+  }
+  
+  /* Forms */
+  input, textarea, select {
+    border-color: var(--dark-text);
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--success);
+    color: var(--success);
+  }
+  
+  /* Form validation and alert styles */
+  .alert-success {
+    background-color: var(--success);
+    color: var(--dark-bg);
+    border-color: var(--success);
+  }
+  
+  .alert-error {
+    background-color: var(--error);
+    color: var(--dark-bg);
+    border-color: var(--error);
+  }
+  
+  .alert-warning {
+    background-color: var(--warning);
+    color: var(--dark-bg);
+    border-color: var(--warning);
+  }
+  
+  /* Form validation styles */
+  .input-success {
+    border-color: var(--success);
+    color: var(--success);
+  }
+  
+  .input-validating {
+    border-color: var(--warning);
+    color: var(--warning);
+  }
+  
+  .input-error {
+    border-color: var(--error);
+    color: var(--error);
+  }
+  
+  /* Form feedback messages */
+  .feedback-success {
+    color: var(--success);
+  }
+  
+  .feedback-validating {
+    color: var(--warning);
+  }
+  
+  .feedback-error {
+    color: var(--error);
+  }
+  
+  /* Utility classes */
+  .highlight {
+    background-color: var(--dark-highlight);
+    color: var(--dark-bg);
+  }

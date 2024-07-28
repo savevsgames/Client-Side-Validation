@@ -1,0 +1,319 @@
+/* Import reset styles */
+@import url("reset.css");
+
+/* Base styles */
+body {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-regular);
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Code elements */
+code,
+pre {
+  font-family: var(--code-font);
+  font-weight: var(--font-weight-regular);
+  background-color: var(--light-highlight);
+  color: var(--light-text);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+/* Links */
+a {
+  color: var(--light-accent);
+  text-decoration: none;
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button,
+.button {
+  font-family: var(--body-font);
+  background-color: var(--light-accent);
+  color: var(--light-bg);
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--light-highlight);
+  color: var(--light-text);
+}
+
+/* Navigation */
+nav {
+  background-color: var(--light-highlight);
+  padding: 1em;
+}
+
+nav a {
+  color: var(--light-text);
+  margin-right: 1em;
+  font-weight: var(--font-weight-bold);
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--light-accent);
+}
+
+/* Forms */
+input,
+textarea,
+select {
+  font-family: var(--body-font);
+  border: 1px solid var(--light-text);
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--success);
+  color: var(--success);
+  outline: none;
+}
+
+/* Form validation and alert styles */
+.success {
+  color: var(--success);
+}
+
+.failure,
+.error {
+  color: var(--error);
+}
+
+.warning {
+  color: var(--warning);
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.alert-success {
+  background-color: var(--success-bg);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.alert-error {
+  background-color: var(--error-bg);
+  color: var(--error);
+  border: 1px solid var(--error);
+}
+
+.alert-warning {
+  background-color: var(--warning-bg);
+  color: var(--warning);
+  border: 1px solid var(--warning);
+}
+
+/* Form validation styles */
+.input-success {
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.input-validating {
+  border-color: var(--warning);
+  color: var(--warning);
+}
+
+.input-error {
+  border-color: var(--error);
+  color: var(--error);
+}
+
+/* Form feedback messages */
+.feedback {
+  font-size: 0.875em;
+  margin-top: -0.5em;
+  margin-bottom: 1em;
+}
+
+.feedback-success {
+  color: var(--success);
+}
+
+.feedback-validating {
+  color: var(--warning);
+}
+
+.feedback-error {
+  color: var(--error);
+}
+
+/* Utility classes */
+.code-font-bold {
+  font-family: var(--code-font);
+  font-weight: var(--font-weight-bold);
+  font-style: normal;
+}
+
+.code-font-regular {
+  font-family: var(--code-font);
+  font-weight: var(--font-weight-regular);
+  font-style: normal;
+}
+
+.body-font-regular {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-regular);
+  font-style: normal;
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.highlight {
+  background-color: var(--light-highlight);
+  color: var(--light-text);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+/* Layout styles */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 1em;
+}
+
+/* Header */
+header {
+  width: 100%;
+  max-width: 100%;
+  padding: 1em 0;
+  gap: 1em;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  padding: 1em;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  display: inline;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  padding-top: 60px; /* Adjust based on your nav height */
+}
+
+form {
+  max-width: 400px;
+  width: 100%;
+  padding: 2em;
+  margin: auto;
+}
+
+/* Form elements */
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button[type="submit"] {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+fieldset {
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+/* Checkbox layout */
+label input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  form {
+    max-width: 100%;
+    padding: 1em;
+  }
+
+  nav {
+    position: static;
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
+
+  main {
+    padding-top: 0;
+  }
+}
