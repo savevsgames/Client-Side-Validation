@@ -13,13 +13,13 @@
   --light-bg: #f8f9fa;
   --light-text: #212529;
   --light-highlight: #ffd166;
-  --light-accent: #4361ee;
+  --light-accent: #3653d6;
 
   /* Dark theme colors */
   --dark-bg: #1a1b1e;
   --dark-text: #e9ecef;
   --dark-highlight: #4cc9f0;
-  --dark-accent: #bff725;
+  --dark-accent: #8dfc26;
 
   /* Common colors */
   --success: #2ec4b6;
